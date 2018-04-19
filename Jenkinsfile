@@ -1,20 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('Say hello to my lil friend') {
+    stage('Say Hello') {
       steps {
-        sh '''pipeline {
- agent any
-   stages {
-      stage(\'Say hello to my lil friend\') {
-         steps {
-            echo \'Say hello to my lil friend! Now say goodbye\'   
-            sh \'java -version\'
-         }
-      }
-   }
-}'''
-        }
+        echo 'Hello world'
+        sh '''java -version
+'''
       }
     }
   }
+}
