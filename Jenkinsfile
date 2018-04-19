@@ -1,7 +1,7 @@
 pipeline {
   agent any
   libraries {
-    lib('')
+    lib("SharedLibs")
   }
   stages {
     stage('Say Hello') {
